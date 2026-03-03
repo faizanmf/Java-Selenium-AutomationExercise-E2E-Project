@@ -575,6 +575,16 @@ public class FullFlowTest extends BaseTest {
         Assert.assertEquals(page.homePage().verifyAutomationEngineerTxt(), "Full-Fledged practice website for Automation Engineers");
     }
 
+    @Test
+    public void sampleJenkinsTest()
+    {
+        int a=5;
+        int b=5;
+        int c=a+b;
+
+        Assert.assertEquals(c, 10);
+    }
+
 
 
 }
