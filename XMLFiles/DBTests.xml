@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DB Suite" verbose="1">
+    <test name="Login Test">
+        <!-- Name must be exactly "query" -->
+        <!-- valid data" -->
+        <parameter name="query" value="SELECT * FROM dbo.LoginTestData WHERE Status='Valid'" />
+
+        <classes>
+            <class name="Test.FullFlowTest">
+                <methods>
+                    <include name="DBLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
