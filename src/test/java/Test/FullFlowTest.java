@@ -583,6 +583,7 @@ public class FullFlowTest extends BaseTest {
         int c=a+b;
 
         Assert.assertEquals(c, 10);
+        Assert.assertNotEquals(c, 15);
     }
 
 
